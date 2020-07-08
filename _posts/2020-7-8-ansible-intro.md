@@ -1,13 +1,17 @@
 ---
-# **<p align="center">Network Automation with Ansible - Part 1</p>**
+layout: post
+title: Ansible Intro
 ---
 
-# 1. Ansible introduction
+Ansible is an awesome network management tool. It depends on how much time you are spending with Ansible to master the basic concepts and apply these concepts on the day to day work. Ansible is a very powerful tool and it can be the swiss army knife in your networking toolset. As you mature as a network automation engineer, you will start using the tool more often than managing the network devices on an individual basics. 
 
-If you are network engineer who is reponsible to manage more than
+I am not covering much of the basics here, there are lot of free webinars available in ansible website to get yourself upto speed.
 
-Refer the getting started documentation once before you start the lab tasks:
-    https://docs.ansible.com/ansible/2.8/network/getting_started/index.html
+Refer the below mentioned link for more info:
+https://www.ansible.com/resources/webinars-training
+https://docs.ansible.com/ansible/2.8/network/getting_started/index.htm
+
+Once you get familar with all the basic concepts of ansible, you can start working on the below mentioned tasks. This is more of a DIY style approach, rather than me teaching everything. 
 
 ### Objective
 - Setup your ansible environment: ansible.cfg & hosts file
