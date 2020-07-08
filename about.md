@@ -4,10 +4,10 @@ title: About
 permalink: /about/
 ---
 
-I am a Network Consultant with many years of field experience in designing and managing large enterprise and service provider networks. Own multiple cisco certifications. Getting started with my NetDevOps journey. This blog is capture all the intresting work i want to share with the networking community...!
+I am a Network Consultant with many years of field experience in designing and managing large scale networks. Own multiple CCIE certifications and AWS-SAA. Getting started with my NetDevOps journey. This blog is to share all the intresting work that i am working on and raspberry pi tinkering projects related to networking...!
 
 
 
 ### Contact me
 
-[email@domain.com](mailto:jagadnag@gmail.com)
+[jagadnag@gmail.com](mailto:jagadnag@gmail.com)
