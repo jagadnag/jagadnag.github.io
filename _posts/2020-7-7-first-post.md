@@ -3,9 +3,9 @@ layout: post
 title: First Post!
 ---
 
-This is the first post on blog. Here i will cover all the topics that are realted to the Network Engineering and Automation. 
+This is my first post. In this blog i will cover all the topics that are realted to the Network Automation and Devops. 
 
-These are my current areas of focus to get devent certified and transition into a Netdevops engineer.
+These are my current areas of focus to transition into a Netdevops engineer.
 
 - Linux
 - Git
@@ -14,3 +14,4 @@ These are my current areas of focus to get devent certified and transition into 
 - Jenkins
 - CICD
 - Recommeded Books
+- Raspberry pi
