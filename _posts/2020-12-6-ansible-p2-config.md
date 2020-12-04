@@ -10,6 +10,24 @@ title: Ansible Part 2 - Basic setup
 - Learn to use ansible command line module
 
 
+### Ansible 2.10 changes
+
+Ansible team brought major changes to the ansible 2.10 version. There are two key components of ansible that we need to remember **ansbile-base** and **ansible-collections**
+
+The ansible/ansible (ansible-base) repository only contains:
+
+#### Ansible Base:
+
+Base package contains the core Ansible programs and documentation. The ansible package (will contain a subset of collections) and depend on the new ansible-base package (the Ansible engine).A tiny subset of modules and plugins are also included with the base package. For ex: cisco ios, iosxr, nxos etc.,
+
+The rest of the modules and plugins have been moved into various "collections"
+
+#### Ansible Collections:
+
+Collections are independently developed and published by the person or team who is developing and maintaning the modules. The collections will be hosted on ansible-galaxy, where we can install it on demand basis.
+
+The bigger picture is more like how to work with our phones. The base operation system (Andriod or iOS) is like the ansible-base, it comes with few native apps to get started. The ansible-collections are like the apps that we download from the app store, not everyone will need all the apps, so we can pick and choose based on our requirement to complete the task in hand. 
+
 
 ## Configure the ansible.cfg file
 
@@ -34,7 +52,7 @@ retry_files_enabled = False
 interpreter_python = auto_silent
 ```
 
-## 1.5 Create Ansible Inventory
+## Create Ansible Inventory
 
 All details related to the managed hosts are provided through inventory file. Ansible inventory can be created manually or dynamically using ini or yaml syntax. For more details refer to - https://docs.ansible.com/ansible/2.8/user_guide/intro_inventory.html
 
@@ -56,7 +74,7 @@ ansible_network_os=ios
 - Create a parent group named 'routers' and add core and branch to it.
 - Define the ansible_user and ansible_password variables for the routers group.
 
-## 1.6 Ansible Command line
+## Ansible Command line
 
 Ansible command line can be very useful to run quick tasks, which dosent need a playbook. You are required to pass in all the required details as arguments. For ex: hosts file or host details, module, module parameters, connection paramertes etc.,
 
@@ -72,7 +90,7 @@ Ansible command line can be very useful to run quick tasks, which dosent need a 
 
   `ansible <host or grp name> -m ios_command -a "commands='show ip int brie'" > sip.txt`
 
-## 1.7 Develop a basic playbook
+## Develop a basic playbook
 
 #### Create a basic playbook and run it using the `ansible-playbook` command. 
 
@@ -88,7 +106,7 @@ Ansible command line can be very useful to run quick tasks, which dosent need a 
       ping:
 ```
 
-## 1.8 Write playbook using cisco-ios modules
+## Write playbook using cisco-ios modules
 
 Refer cisco ios module documentaion and write simple playbooks.
 
